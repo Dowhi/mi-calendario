@@ -11,10 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: flutter build web --release
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_APPTAXI_F2190 }}
-          channelId: live
+          flutter-version: '3.35.0'
+          channel: 'stable'
+      - name: Enable web
+        run: flutter config --enable-web
+      - name: Get dependencies
+        run: flutter pub get
+      - name: Build web
+        run: flutter build web --release
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_APPTAXI_F2190 }}'
           projectId: apptaxi-f2190
+          channelId: live
