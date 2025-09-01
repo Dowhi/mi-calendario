@@ -53,9 +53,9 @@ firebase_options.dart
 .env.local
 .env.production
 
-# Generated files
-*.g.dart
-*.freezed.dart
+# Generated files - INCLUDE THESE FOR WEB BUILD
+# *.g.dart
+# *.freezed.dart
 
 # Temporary files
 *.tmp
