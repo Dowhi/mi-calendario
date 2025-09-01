@@ -25,10 +25,8 @@ jobs:
     - name: Get dependencies
       run: flutter pub get
     
-    - name: Build web with WASM
-      run: flutter build web --release --web-renderer html
-      env:
-        FLUTTER_WEB_USE_SKIA: true
+    - name: Build web
+      run: flutter build web --release
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
