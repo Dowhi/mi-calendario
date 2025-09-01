@@ -46,7 +46,7 @@ app.*.map.json
 # Firebase
 google-services.json
 GoogleService-Info.plist
-firebase_options.dart
+# firebase_options.dart - INCLUDE THIS FOR WEB BUILD
 
 # Environment files
 .env
@@ -117,5 +117,5 @@ firebase-debug.log
 firestore-debug.log
 ui-debug.log
 
-# Generated Firebase files
-lib/firebase_options.dart
+# Generated Firebase files - INCLUDE THESE FOR WEB BUILD
+# lib/firebase_options.dart
