@@ -1,0 +1,121 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Generated files
+*.g.dart
+*.freezed.dart
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+backup_restore_point/
+*.backup
+
+# Logs
+*.log
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Flutter specific
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Build outputs
+build/
+.dart_tool/
+
+# Coverage
+coverage/
+
+# Temporary files
+temp_icon.html
+
+# Node.js dependencies
+functions/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Firebase Functions
+functions/.firebase/
+functions/.firebaserc
+functions/firebase-debug.log
+functions/firestore-debug.log
+functions/ui-debug.log
+
+# Firebase local files
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Generated Firebase files
+lib/firebase_options.dart
