@@ -26,9 +26,7 @@ jobs:
       run: flutter pub get
     
     - name: Build web
-      env:
-        FLUTTER_WEB_USE_SKIA: true
-      run: flutter build web --release --web-renderer canvaskit
+      run: flutter build web --release
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
