@@ -353,3 +353,5 @@ Si tienes problemas o preguntas:
 ---
 
 Desarrollado con ❤️ usando Flutter y Firebase
+#   C o n f i g u r a c i � n   F i r e b a s e   c o m p l e t a d a   -   0 9 / 0 2 / 2 0 2 5   1 7 : 0 4 : 5 6  
+ 
