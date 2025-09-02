@@ -68,8 +68,8 @@
 
   <script>
     window.addEventListener('load', function(ev) {
-      // Simple Flutter initialization
-      _flutter.loader.loadEntrypoint({
+      // Use new Flutter API (non-deprecated)
+      _flutter.loader.load({
         onEntrypointLoaded: function(engineInitializer) {
           engineInitializer.initializeEngine().then(function(appRunner) {
             appRunner.runApp();
